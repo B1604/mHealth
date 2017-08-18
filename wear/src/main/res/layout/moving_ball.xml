@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/moving_ball_surface"
+        android:layout_weight="0.46" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="exit"
+        android:textSize="12.5dp"
+        android:id="@+id/exit1"
+        />
+
+</LinearLayout>

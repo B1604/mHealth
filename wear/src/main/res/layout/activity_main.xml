@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_grey"
+    android:layout_alignParentBottom="true"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="137dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="@dimen/main_YorN_btn_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:text="YES"
+                    android:id="@+id/stressYes"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.20" />
+
+                <Button
+                    android:layout_width="@dimen/main_YorN_btn_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_big"
+                    android:text="NO"
+                    android:id="@+id/stressNo"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.59"
+                android:gravity="center_horizontal"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="@dimen/main_SorS_btn_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:textSize="@dimen/text_size_middle"
+                    android:text="START"
+                    android:id="@+id/startServiceId"
+                    android:layout_weight="0.50"/>
+
+                <Button
+                    android:layout_width="@dimen/main_SorS_btn_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:textSize="@dimen/text_size_middle"
+                    android:text="STOP"
+                    android:id="@+id/stopServiceId"
+                    android:layout_weight="0.50"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:layout_marginTop="27dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are You Stressed Now?"
+            android:layout_marginLeft="2dp"
+            android:textSize="16dp"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</RelativeLayout>
